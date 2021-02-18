@@ -42,18 +42,14 @@
     --color-base: #fff;
     --color-hl: rgba(201, 255, 184, 0.767);
     --color-background: rgb(0, 0, 0);
+    --background-image: url("/assets/earth-poster.jpg");
 }
 
 .frost {
     --color-base: #fff;
     --color-hl: rgba(184, 244, 255, 0.767);
     --color-background: rgb(0, 0, 0);
-}
-
-.fire {
-    --color-base: #fff;
-    --color-hl: rgba(255, 201, 184, 0.767);
-    --color-background: rgb(0, 0, 0); 
+    --background-image: url("/assets/frost-poster.jpg");
 }
 
 p {margin-bottom: 1rem;}
