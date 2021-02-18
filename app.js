@@ -17,7 +17,19 @@ function setState(newState) {
     };
 }
 
+function getThemes() {
+    return Object.keys(config);
+}
+
+function checkTheme(theme) {
+    if (!getThemes().includes(theme)) {
+        throw new Error("Invalid theme");
+    }
+}
+
 function changeTheme(newTheme) {
+    checkTheme();
+
     document.body.classList.remove(state.theme);
     setState({ theme: newTheme });
     document.body.classList.add(newTheme);
