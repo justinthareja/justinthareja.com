@@ -1,6 +1,17 @@
 var config = {
-    "frost": "./assets/frost.mp4",
-    "earth": "./assets/earth.mp4"
+    frost: {
+        id: 1,
+        name: "frost",
+        src: "./assets/frost.mp4",
+        poster: "./assets/frost-poster.jpg"
+    },
+
+    earth: {
+        id: 2,
+        name: "earth",
+        src: "./assets/earth.mp4",
+        poster: "./asses/earth-poster.jpg",
+    }
 };
 
 var state = {
@@ -25,16 +36,18 @@ function checkTheme(theme) {
     if (!getThemes().includes(theme)) {
         throw new Error("Invalid theme");
     }
+
+    return true;
 }
 
 function changeTheme(newTheme) {
-    checkTheme();
+    checkTheme(newTheme);
 
     document.body.classList.remove(state.theme);
     setState({ theme: newTheme });
     document.body.classList.add(newTheme);
 
-    const src = config[newTheme];
+    const src = config[newTheme].src;
 
     $source.setAttribute("src", src);
     $video.load();
