@@ -10,14 +10,37 @@
     --font-base: 16px;
     --font-gianormous: 20rem;
     --font-larger: 3rem;
+
+    --w-10: 4px;
+    --w-20: 8px;
+    --w-30: 12px;
+    --w-40: 16px;
+    --w-50: 24px;
+    --w-60: 32px;
+    --w-70: 48px;
+    --w-80: 64px;
+    --w-90: 96px;
+    --w-100: 128px;
+    --w-110: 192px;
+    --w-120: 256px;
+    --w-130: 384px;
+    --w-140: 512px;
+    --w-150: 640px;
+    --w-160: 768px;
+
+    /* TODO: Z-index system */
+    
     
     --color-base: #fff;
 
     font-size: var(--font-base);
+    line-height: 1.4;
 }
 
 body {
     display: flex;
+    flex-flow: column;
+
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: var(--color-base);
@@ -29,14 +52,24 @@ body {
     flex-flow: column;
     align-items: center;
     justify-content: center;
+
+    line-height: 0.9;
+
 }
 
 .name {
     font-weight: 100;
+    text-transform: uppercase;
+    font-size: 11vw;
+}
+
+.lastname {
+    letter-spacing: -1.3vw;
 }
 
 .sub {
-    font-size: var(--font-largest);
+    margin-top: var(--w-80);
+    font-size: 4vw;
 }
 
 .bg-vid {
@@ -49,7 +82,25 @@ body {
     z-index: -1;
 }
 
-.center {
+
+.main {
+    position: relative;
+    padding: 1rem;
+    
+    background-color: rgb(0, 0, 0, 0.66);
+    color: white;
+
+}
+
+.main p {
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+/* UTILITIES */
+
+.center,
+.text-center {
     text-align: center;
 }
 
