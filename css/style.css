@@ -75,7 +75,7 @@ body {
 }
 
 .lastname {
-    letter-spacing: -1.3vw;
+    letter-spacing: -1vw;
 }
 
 .sub {
@@ -143,5 +143,9 @@ body {
 @media only screen and (min-width: 750px) {
     .headshot {
         height: var(--w-130);
+    }
+
+    .lastname {
+        letter-spacing: -0.5rem;
     }
 }
