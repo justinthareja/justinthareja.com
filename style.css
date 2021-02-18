@@ -99,6 +99,33 @@ body {
     margin: 1rem auto;
 }
 
+.img {
+    height: var(--w-60);
+
+    fill: var(--color-base);
+    stroke: transparent;
+    /* fill: transparent; */
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+}
+
+.nav-links {
+    padding: var(--w-40);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+}
+
+.headshot {
+    height: var(--w-130);
+    border-radius: calc(0.5 * var(--w-130));
+}
+
 /* GLOBAL */
 
 p {margin-bottom: 1rem;}
