@@ -81,6 +81,7 @@ body {
 .video-container {
     position: relative;
     max-width: 1200px;
+    clip-path: url(#clip-00);
 }
 
 .video-container::after {
@@ -103,7 +104,6 @@ body {
 .bg-vid {
     width: 100%;
     display: block;
-    clip-path: url(#clip-00);
 }
 
 .clipping-paths {
