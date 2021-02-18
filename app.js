@@ -29,3 +29,13 @@ function changeTheme(newTheme) {
     $video.play();
 }
 
+function greetDev() {
+    console.log(
+    `PSST: If you're already lookin', try out my theme changer by calling:
+    
+    changeTheme()
+    
+    current available themes are:`, Object.keys(config).join(", "))
+}
+
+greetDev();
