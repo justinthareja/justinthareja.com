@@ -66,6 +66,7 @@ body {
 
 .video-container {
     position: relative;
+    max-width: 1200px;
 }
 
 .video-container::after {
