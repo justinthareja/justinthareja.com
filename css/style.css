@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: var(--color-base);
+}
+
+.nav {
+    height: var(--w-80);
+    padding: var(--w-30);
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    height: inherit;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    list-style: none;
+}
+
+.nav-link {
+    height: var(--w-70);
+    width: var(--w-70);
+    margin-right: var(--w-40);
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    border-radius: calc(0.5 * var(--w-70));
+}
+
+.nav-link:hover {
+    background-color: rgb(0, 0, 0, 0.10);
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.nav-link a {
+    height: 32;
+    width: 32;
+    display: inline-block;
+}
+
+
+.header {
+    height: calc(100vh - var(--w-80));
+    max-width: var(--w-160);
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+
+    line-height: 0.9;
+
+}
+
+.name {
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: min(11vw, 6rem);
+}
+
+.lastname {
+    letter-spacing: -1.3vw;
+}
+
+.sub {
+    margin-top: var(--w-80);
+    font-size: 4vw;
+}
+
+.bg-vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+.main {
+    height: calc(100vh - var(--w-70));
+    position: relative;
+    padding: 1rem;
+    
+    background-color: var(--color-background);
+    color: white;
+    overflow: scroll;
+}
+
+.main p {
+    max-width: 600px;
+    margin: 1rem auto;
+    
+}
+
+.icon {
+    height: var(--w-60);
+
+    fill: var(--color-base);
+    stroke: transparent;
+}
+
+
+
+.headshot {
+    height: var(--w-120);
+    border-radius: calc(0.5 * var(--w-130));
+}
+
+.footer {
+    width: 100%;
+    height: var(--w-70);
+    padding: var(--w-30);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.footer .nav-link:hover .icon{
+    fill: var(--color-hl);
+}
+
+
+@media only screen and (min-width: 750px) {
+    .headshot {
+        height: var(--w-130);
+    }
+}

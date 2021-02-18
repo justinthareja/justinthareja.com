@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* FONTS */
+    --font-base: 16px;
+    --font-gianormous: 20rem;
+    --font-larger: 3rem;
+
+    /* SIZING SYSTEM - BOX MODEL */
+    --w-10: 4px;
+    --w-20: 8px;
+    --w-30: 12px;
+    --w-40: 16px;
+    --w-50: 24px;
+    --w-60: 32px;
+    --w-70: 48px;
+    --w-80: 64px;
+    --w-90: 96px;
+    --w-100: 128px;
+    --w-110: 192px;
+    --w-120: 256px;
+    --w-130: 384px;
+    --w-140: 512px;
+    --w-150: 640px;
+    --w-160: 768px;
+
+    /* TODO: Z-index system */
+
+    font-size: var(--font-base);
+}
+
+/* THEMES */
+.earth {
+    --color-base: #fff;
+    --color-hl: rgba(201, 255, 184, 0.767);
+    --color-background: rgb(0, 0, 0, 0.66);
+}
+
+.frost {
+    --color-base: #fff;
+    --color-hl: rgba(184, 244, 255, 0.767);
+    --color-background: rgb(0, 0, 0, 0.66);
+}
+
+.fire {
+    --color-base: #fff;
+    --color-hl: rgba(255, 201, 184, 0.767);
+    --color-background: rgb(0, 0, 0, 0.66); 
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+
+.center,
+.text-center {
+    text-align: center;
+}
+
+.emphasize {
+    font-style: italic;
+}
+
+.gianormous,
+.text-gianormous {
+    font-size: 14rem;
+}
+
+.larger,
+.text-larger {
+    font-size: 3rem;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.highlight {
+    color: var(--color-hl);
+}
+
