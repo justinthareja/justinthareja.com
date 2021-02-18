@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-base: 16px;
+    --font-gianormous: 20rem;
+    --font-larger: 3rem;
+    
+    --color-base: #fff;
+
+    font-size: var(--font-base);
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: var(--color-base);
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    font-weight: 100;
+}
+
+.sub {
+    font-size: var(--font-largest);
+}
+
+.bg-vid {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.center {
+    text-align: center;
+}
+
+.emphasize {
+    font-style: italic;
+}
+
+.gianormous,
+.text-gianormous {
+    font-size: 14rem;
+}
+
+.larger,
+.text-larger {
+    font-size: 3rem;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.light {
+    font-weight: 300;
+}
