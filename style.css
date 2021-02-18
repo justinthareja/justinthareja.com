@@ -32,6 +32,8 @@
     
     
     --color-base: #fff;
+    --color-hl: rgba(184, 244, 255, 0.767);
+    --color-background: rgb(0, 0, 0, 0.66);
 
     font-size: var(--font-base);
     line-height: 1.4;
@@ -86,34 +88,42 @@ body {
 
 
 .main {
+    height: calc(100vh - var(--w-70));
+    /* nav height */
+    margin-top: var(--w-80); 
     position: relative;
     padding: 1rem;
     
-    background-color: rgb(0, 0, 0, 0.66);
+    background-color: var(--color-background);
     color: white;
-
+    overflow: scroll;
 }
 
 .main p {
     max-width: 600px;
     margin: 1rem auto;
+    
 }
 
-.img {
+.icon {
     height: var(--w-60);
 
     fill: var(--color-base);
     stroke: transparent;
-    /* fill: transparent; */
 }
 
 .nav {
-    position: fixed;
+    height: var(--w-80);
+    padding: var(--w-30);
     width: 100%;
+    /* position: fixed; */
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav-links {
-    padding: var(--w-40);
+    height: inherit;
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -121,9 +131,48 @@ body {
     list-style: none;
 }
 
+.nav-link {
+    height: var(--w-70);
+    width: var(--w-70);
+    margin-right: var(--w-40);
+    /* padding: var(--w-10); */
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+
+    border-radius: calc(0.5 * var(--w-70));
+}
+
+.footer .nav-link:hover .icon{
+    fill: var(--color-hl);
+}
+.nav-link:hover {
+    background-color: rgb(0, 0, 0, 0.10);
+}
+
+.nav-link:last-child {
+    margin-right: 0;
+}
+
+.nav-link a {
+    height: 32;
+    width: 32;
+    display: inline-block;
+}
+
 .headshot {
     height: var(--w-130);
     border-radius: calc(0.5 * var(--w-130));
+}
+
+.footer {
+    height: var(--w-70);
+    padding: var(--w-30);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* GLOBAL */
