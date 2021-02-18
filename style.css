@@ -181,6 +181,7 @@ body {
 }
 
 .footer {
+    width: 100%;
     height: var(--w-70);
     padding: var(--w-30);
 
