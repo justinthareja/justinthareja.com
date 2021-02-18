@@ -96,8 +96,9 @@ body {
 
 .main {
     height: calc(100vh - var(--w-70));
+    max-width: 600px;
     position: relative;
-    padding: 1rem;
+    padding: var(--w-40);
     
     background-color: var(--color-background);
     color: white;
@@ -105,7 +106,6 @@ body {
 }
 
 .main p {
-    max-width: 600px;
     margin: 1rem auto;
     
 }
@@ -126,12 +126,15 @@ body {
 
 .footer {
     width: 100%;
+    max-width: 600px;
     height: var(--w-70);
-    padding: var(--w-30);
+    padding: var(--w-40);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background-color: var(--color-background);
     
 }
 
