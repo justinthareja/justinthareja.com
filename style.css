@@ -54,6 +54,7 @@
 body {
     display: flex;
     flex-flow: column;
+    align-items: center;
 
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -64,6 +65,7 @@ body {
 
 .header {
     height: 100vh;
+    max-width: var(--w-160);
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -76,7 +78,7 @@ body {
 .name {
     font-weight: 100;
     text-transform: uppercase;
-    font-size: 11vw;
+    font-size: min(11vw, 6rem);
 }
 
 .lastname {
