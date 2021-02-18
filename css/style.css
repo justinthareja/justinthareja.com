@@ -64,6 +64,19 @@ body {
     justify-content: center;
 }
 
+.icon-container {
+    position: absolute;
+    bottom: var(--w-60);
+}
+
+.cheveron-down .primary {
+    fill: var(--color-background);
+}
+
+.cheveron-down .secondary {
+    fill: var(--color-base);
+}
+
 .video-container {
     position: relative;
     max-width: 1200px;
