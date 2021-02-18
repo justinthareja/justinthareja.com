@@ -10,7 +10,7 @@ var config = {
         id: 2,
         name: "earth",
         src: "./assets/earth.mp4",
-        poster: "./asses/earth-poster.jpg",
+        poster: "./assets/earth-poster.jpg",
     }
 };
 
@@ -47,9 +47,10 @@ function changeTheme(newTheme) {
     setState({ theme: newTheme });
     document.body.classList.add(newTheme);
 
-    const src = config[newTheme].src;
+    const { src, poster } = config[newTheme];
 
     $source.setAttribute("src", src);
+    $video.setAttribute("poster", poster);
     $video.load();
     $video.play();
 }
