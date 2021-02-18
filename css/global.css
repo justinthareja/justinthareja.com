@@ -11,6 +11,7 @@
     --font-base: 16px;
     --font-gianormous: 20rem;
     --font-larger: 3rem;
+    --font-small: 0.8rem;
 
     /* SIZING SYSTEM - BOX MODEL */
     --w-10: 4px;
@@ -39,19 +40,19 @@
 .earth {
     --color-base: #fff;
     --color-hl: rgba(201, 255, 184, 0.767);
-    --color-background: rgb(0, 0, 0, 0.66);
+    --color-background: rgb(0, 0, 0);
 }
 
 .frost {
     --color-base: #fff;
     --color-hl: rgba(184, 244, 255, 0.767);
-    --color-background: rgb(0, 0, 0, 0.66);
+    --color-background: rgb(0, 0, 0);
 }
 
 .fire {
     --color-base: #fff;
     --color-hl: rgba(255, 201, 184, 0.767);
-    --color-background: rgb(0, 0, 0, 0.66); 
+    --color-background: rgb(0, 0, 0); 
 }
 
 p {margin-bottom: 1rem;}
@@ -68,44 +69,20 @@ h1 {
 }
 
 h2 {font-size: 2.441rem;}
-
 h3 {font-size: 1.953rem;}
-
 h4 {font-size: 1.563rem;}
-
 h5 {font-size: 1.25rem;}
 
-small, .text_small {font-size: 0.8rem;}
+small,
+.text-small { font-size: var(--font-small); }
+.text-gianormous { font-size: 14rem; }
+.text-larger { font-size: 3rem; }
 
+.text-thin { font-weight: 100; }
+.text-light { font-weight: 300; }
+.text-caps { text-transform: uppercase; }
+.text-center { text-align: center; }
+.text-emphasize { font-style: italic; }
 
-.center,
-.text-center {
-    text-align: center;
-}
-
-.emphasize {
-    font-style: italic;
-}
-
-.gianormous,
-.text-gianormous {
-    font-size: 14rem;
-}
-
-.larger,
-.text-larger {
-    font-size: 3rem;
-}
-
-.thin {
-    font-weight: 100;
-}
-
-.light {
-    font-weight: 300;
-}
-
-.highlight {
-    color: var(--color-hl);
-}
+.highlight { color: var(--color-hl); }
 
