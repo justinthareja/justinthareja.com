@@ -31,7 +31,7 @@ var config = {
 };
 
 var state = {
-    theme: "frost"
+    theme: "wind"
 };
 
 var $video = document.querySelector(".js-bg");
