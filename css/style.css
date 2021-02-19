@@ -67,7 +67,7 @@ body {
 
 .icon-container {
     position: absolute;
-    bottom: var(--w-60);
+    bottom: var(--w-30);
 }
 
 .cheveron-down .primary {
@@ -80,7 +80,7 @@ body {
 
 .video-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1080px;
 }
 
 .video-container::after {
