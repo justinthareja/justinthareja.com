@@ -80,7 +80,7 @@ body {
 
 .video-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1080px;
     clip-path: url(#clip-00);
 }
 
