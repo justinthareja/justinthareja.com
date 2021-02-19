@@ -33,10 +33,13 @@
             <defs/>
         </svg>
         <div class="video-container">
-            <!-- poster: fallback playsinline: works on iOS  -->
-            <video id="bg-vid" class="bg-vid js-bg" muted autoplay loop playsinline poster="./assets/frost-poster.jpg">
-                <!-- default to theme in app.js -->
-                <source class="js-src" src="./assets/frost.mp4" type="video/mp4">
+            <video 
+                id="bg-vid" 
+                class="bg-vid js-bg" 
+                muted autoplay loop playsinline 
+                poster="./assets/frost/knockout/frost-poster-large.jpg">
+                <source class="js-mp4" src="./assets/frost/knockout/frost-large.mp4" type="video/mp4">
+                <source class="js-webm" src="./assets/frost/knockout/frost-large.webm" type="video/webm">
             </video>
         </div>
         <div class="title">

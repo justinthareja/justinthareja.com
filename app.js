@@ -2,15 +2,21 @@ var config = {
     frost: {
         id: 1,
         name: "frost",
-        src: "./assets/frost.mp4",
-        poster: "./assets/frost-poster.jpg"
+        video: {
+            mp4: "./assets/frost/knockout/frost-large.mp4",
+            webm: "./assets/frost/knockout/frost-large.webm",
+            poster: "./assets/frost/knockout/frost-poster-large.jpg"
+        }
     },
 
     earth: {
         id: 2,
         name: "earth",
-        src: "./assets/earth.mp4",
-        poster: "./assets/earth-poster.jpg",
+        video: {
+            mp4: "./assets/earth/knockout/earth-large.mp4",
+            webm: "./assets/earth/knockout/earth-large.mp4",
+            poster: "./assets/earth/knockout/earth-poster-large.jpg",
+        }
     }
 };
 
@@ -19,7 +25,8 @@ var state = {
 };
 
 var $video = document.querySelector(".js-bg");
-var $source = $video.querySelector(".js-src");
+var $mp4 = $video.querySelector(".js-mp4");
+var $webm = $video.querySelector(".js-webm");
 
 function setState(newState) {
     state = {
@@ -47,9 +54,11 @@ function changeTheme(newTheme) {
     setState({ theme: newTheme });
     document.body.classList.add(newTheme);
 
-    const { src, poster } = config[newTheme];
+    const { video } = config[newTheme];
+    const { webm, mp4, poster } = video;
 
-    $source.setAttribute("src", src);
+    $webm.setAttribute("src", webm);
+    $mp4.setAttribute("src", mp4);
     $video.setAttribute("poster", poster);
     $video.load();
     $video.play();
