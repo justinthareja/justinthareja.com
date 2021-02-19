@@ -68,7 +68,7 @@ function greetDev() {
     console.log(
     `PSST: If you're already lookin', try out my theme changer by calling:
     
-    changeTheme()
+    changeTheme("theme")
     
     current available themes are:`, Object.keys(config).join(", "))
 }
