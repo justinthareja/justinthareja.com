@@ -129,6 +129,7 @@ body {
     align-items: center;
 
     background: var(--background-image) no-repeat center center fixed;
+    background-color: var(--color-hl);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
