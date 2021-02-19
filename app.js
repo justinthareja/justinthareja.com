@@ -75,12 +75,19 @@ function changeTheme(newTheme) {
 }
 
 function greetDev() {
+    const currentThemes = Object.keys(config).map(
+        function pluckThemeName(key) {
+            const { name } = config[key];
+            return `"${name}"`;
+        }
+    ).join(", ");
+
     console.log(
     `PSST: If you're already lookin', try out my theme changer by calling:
     
     changeTheme("theme")
     
-    current available themes are:`, Object.keys(config).join(", "))
+    current available themes are:`, currentThemes);
 }
 
 greetDev();
