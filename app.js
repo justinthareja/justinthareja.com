@@ -17,6 +17,16 @@ var config = {
             webm: "./assets/earth/knockout/earth-large.mp4",
             poster: "./assets/earth/knockout/earth-poster-large.jpg",
         }
+    },
+
+    wind: {
+        id: 3,
+        name: "wind",
+        video: {
+            mp4: "./assets/wind/wind.mp4",
+            webm: "./assets/wind/wind.webm",
+            poster: "./assets/wind/wind-poster.jpg"
+        }
     }
 };
 

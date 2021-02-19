@@ -52,6 +52,14 @@
     --background-image: url("../assets/frost/main/frost.jpg");
 }
 
+.wind {
+    --color-base: #fff;
+    --color-hl: rgba(175, 192, 255, 0.767);
+    --color-background: rgb(0, 0, 0);
+    --background-image: url("../assets/wind/main-bg.jpg");
+}
+
+
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
