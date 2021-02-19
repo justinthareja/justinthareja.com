@@ -79,30 +79,13 @@ body {
 }
 
 .video-container {
-    position: relative;
-    max-width: 1080px;
     clip-path: url(#clip-00);
-}
-
-.video-container::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  clip-path: url(#clip-00);
-}
-
-.video-container::after {
-    /* Change this to add a tint */
-  background-color: var(--color-background);
-  mix-blend-mode: screen;
-}
-        
+    -webkit-clip-path: url(#clip-00);
+}      
 
 .bg-vid {
     width: 100%;
+    max-width: 1080px;
     display: block;
 }
 
