@@ -128,12 +128,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: var(--background-image) no-repeat center center fixed;
-    background-color: var(--color-hl);
+    background-image: var(--bg-img);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #000;
 }
 
 .main p {
