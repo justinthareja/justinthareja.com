@@ -147,21 +147,25 @@ body {
     height: 100%;
     max-width: 600px;
     background-color:rgb(0, 0, 0, 0.65);
+    overflow: scroll;
 }
 
 .section {
+    /* always show footer */
+    height: calc(100vh - var(--w-70));
     max-width: 600px;
     padding: var(--w-40);
+    position: relative;
 }
 
-.icon {
-    height: var(--w-60);
-    fill: var(--color-base);
-    stroke: transparent;
+.headshot-container {
+    float: right;
+    margin-left: var(--w-40);
+    margin-bottom: var(--w-40);
 }
 
 .headshot {
-    height: var(--w-120);
+    height: var(--w-100);
     border-radius: calc(0.5 * var(--w-130));
 }
 
@@ -174,8 +178,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     background-color:rgb(0, 0, 0, 0.65);
+}
+
+.icon {
+    height: var(--w-60);
+    fill: var(--color-base);
+    stroke: transparent;
 }
 
 .footer .nav-link:hover .icon{
