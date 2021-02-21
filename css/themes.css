@@ -1,0 +1,20 @@
+.earth {
+    --color-base: #fff;
+    --color-hl: rgba(201, 255, 184);
+    --color-background: rgb(0, 0, 0);
+    --background-image: url("../assets/earth/bg-med.jpg");
+}
+
+.frost {
+    --color-base: #fff;
+    --color-hl: rgba(184, 244, 255);
+    --color-background: rgb(0, 0, 0);
+    --background-image: url("../assets/frost/bg-med.jpg");
+}
+
+.wind {
+    --color-base: #fff;
+    --color-hl: rgb(151, 255, 220);
+    --color-background: rgb(0, 0, 0);
+    --background-image: url("../assets/wind/bg-med.jpg");
+}

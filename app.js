@@ -3,9 +3,9 @@ var config = {
         id: 1,
         name: "frost",
         video: {
-            mp4: "./assets/frost/knockout/frost-large.mp4",
-            webm: "./assets/frost/knockout/frost-large.webm",
-            poster: "./assets/frost/knockout/frost-poster-large.jpg"
+            mp4: "./assets/frost/knockout.mp4",
+            webm: "./assets/frost/knockout.webm",
+            poster: "./assets/frost/knockout.png"
         }
     },
 
@@ -13,9 +13,9 @@ var config = {
         id: 2,
         name: "earth",
         video: {
-            mp4: "./assets/earth/knockout/earth-large.mp4",
-            webm: "./assets/earth/knockout/earth-large.mp4",
-            poster: "./assets/earth/knockout/earth-poster-large.jpg",
+            mp4: "./assets/earth/knockout.mp4",
+            webm: "./assets/earth/knockout.webm",
+            poster: "./assets/earth/knockout-poster.png",
         }
     },
 
@@ -23,15 +23,15 @@ var config = {
         id: 3,
         name: "wind",
         video: {
-            mp4: "./assets/wind/wind.mp4",
-            webm: "./assets/wind/wind.webm",
-            poster: "./assets/wind/wind-poster.jpg"
+            mp4: "./assets/wind/knockout.mp4",
+            webm: "./assets/wind/knockout.webm",
+            poster: "./assets/wind/knockout-poster.png"
         }
     }
 };
 
 var state = {
-    theme: "wind"
+    theme: "frost"
 };
 
 var $video = document.querySelector(".js-bg");

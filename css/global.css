@@ -37,29 +37,6 @@
     font-size: var(--font-base);
 }
 
-/* THEMES */
-.earth {
-    --color-base: #fff;
-    --color-hl: rgba(201, 255, 184);
-    --color-background: rgb(0, 0, 0);
-    --background-image: url("../assets/earth/main/bg-med.jpg");
-}
-
-.frost {
-    --color-base: #fff;
-    --color-hl: rgba(184, 244, 255);
-    --color-background: rgb(0, 0, 0);
-    --background-image: url("../assets/frost/main/bg-med.jpg");
-}
-
-.wind {
-    --color-base: #fff;
-    --color-hl: rgb(151, 255, 220);
-    --color-background: rgb(0, 0, 0);
-    --background-image: url("../assets/wind/main/bg-med.jpg");
-}
-
-
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
