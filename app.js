@@ -5,7 +5,7 @@ var config = {
         video: {
             mp4: "./assets/frost/knockout.mp4",
             webm: "./assets/frost/knockout.webm",
-            poster: "./assets/frost/knockout.png"
+            poster: "./assets/frost/knockout-poster.png"
         }
     },
 
