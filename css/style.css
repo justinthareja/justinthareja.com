@@ -131,7 +131,7 @@ body {
     background-image: var(--bg-img-small);
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-attachment: fixed;
+    background-attachment: scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
