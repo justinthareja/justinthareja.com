@@ -128,7 +128,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    background-image: var(--bg-img);
+    background-image: var(--bg-img-small);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-attachment: fixed;
@@ -180,6 +180,13 @@ body {
 
 .footer .nav-link:hover .icon{
     fill: var(--color-hl);
+}
+
+
+@media only screen and (min-width: 640px) {
+    .main {
+         background-image: var(--bg-img-med);
+    }
 }
 
 

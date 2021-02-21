@@ -2,19 +2,29 @@
     --color-base: #fff;
     --color-hl: rgba(201, 255, 184);
     --color-background: rgb(0, 0, 0);
-    --bg-img: url("../assets/earth/bg-med.jpg");
+
+    --bg-img-small: url("../assets/earth/bg-small.jpg");
+    --bg-img-med: url("../assets/earth/bg-med.jpg");
+    --bg-img-large: url("../assets/earth/bg-large.jpg");
 }
 
 .frost {
     --color-base: #fff;
     --color-hl: rgba(184, 244, 255);
     --color-background: rgb(0, 0, 0);
-    --bg-img: url("../assets/frost/bg-med.jpg");
+
+    --bg-img-small: url("../assets/frost/bg-small.jpg");
+    --bg-img-med: url("../assets/frost/bg-med.jpg");
+    --bg-img-large: url("../assets/frost/bg-large.jpg");
 }
 
 .wind {
     --color-base: #fff;
     --color-hl: rgb(151, 255, 220);
     --color-background: rgb(0, 0, 0);
-    --bg-img: url("../assets/wind/bg-med.jpg");
+
+    --bg-img-small: url("../assets/wind/bg-small.jpg");
+    --bg-img-med: url("../assets/wind/bg-med.jpg");
+    --bg-img-large: url("../assets/wind/bg-large.jpg");
+
 }
