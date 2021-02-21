@@ -65,27 +65,15 @@ body {
     background-color: var(--color-background);
 }
 
-.icon-container {
-    position: absolute;
-    bottom: var(--w-30);
-}
-
-.cheveron-down .primary {
-    fill: var(--color-background);
-}
-
-.cheveron-down .secondary {
-    fill: var(--color-base);
-}
 
 .video-container {
+    max-height: 90vh;
     clip-path: url(#clip-00);
     -webkit-clip-path: url(#clip-00);
 }      
 
 .bg-vid {
     width: 100%;
-    max-width: 1080px;
     display: block;
 }
 
@@ -118,6 +106,20 @@ body {
     font-size: var(--font-smallest);
 }
 
+
+.icon-container {
+    position: absolute;
+    bottom: var(--w-10);
+    height: var(--w-60);
+}
+
+.cheveron-down .primary {
+    fill: transparent;
+}
+
+.cheveron-down .secondary {
+    fill: var(--color-base);
+}
 
 .main {
     width: 100%;
