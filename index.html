@@ -62,19 +62,93 @@
     </header>
     <main class="main">
         <div class="content">
-            <section class="section section-who">
-                <h1 class="highlight">Who I Am</h1>
+            <section id="about" class="section section who-i-am" aria-label="Who I am">
+                <div class="section-header">
+                    <h1>
+                        <small><i class="icon icon-mountain">[MT.]</i></small>
+                        <span class="txt highlight">Who I Am</span>
+                    </h1>
+                </div>
                 <div class="headshot-container">
                     <img class="headshot" src="./assets/headshot.jpeg" alt="headshot" srcset="">
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eos saepe cum corporis totam necessitatibus culpa assumenda, dignissimos expedita modi consequuntur quae corrupti. Molestiae alias quidem tempora. Error, doloribus soluta?</p>
-                <h1 class="highlight">What I Do</h1>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, eos saepe cum corporis totam necessitatibus culpa
-                    assumenda, dignissimos expedita modi consequuntur quae corrupti. Molestiae alias quidem tempora</p>
+                <!-- TODO: Update text when theme changes -->
+                <p>Ski bum turned web developer.</p>
+                <p>Taking lessons learned from the mountains and applying them to the world of 
+                    frontend development.</p>
+                <p>Specializing in <em>Jamstack</em> development.</p>
+                <p>If I'm not coding, you'll find me chasing storms.</p>
+            </section>
+            <section id="projects" class="section what-i-do" aria-label="What I do">
+                <div class="section-header">
+                    <h1>
+                        <small><i class="icon icon-mountain">[CODE]</i></small>
+                        <span class="txt highlight">What I Do</span>
+                    </h1>
+                    <div class="project">
+                        <div class="project-image-container">
+                        </div>
+                        <div class="project-logo-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-folder project-logo">
+                                <g>
+                                    <path class="primary" d="M22 10H2V6c0-1.1.9-2 2-2h7l2 2h7a2 2 0 0 1 2 2v2z" />
+                                    <rect width="20" height="12" x="2" y="8" class="secondary" rx="2" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h2 class="project-name">Connect 4</h2>
+                            </div>
+                            <div class="project-details">
+                                <p>A vanilla JS implementation of the classic table-top game Connect 4.</p>
+                            </div>
+                            <div class="project-labels">
+                                <div class="project-label">
+                                    <span class="label">Real-time Web</span>
+                                </div>
+                                <div class="project-label">
+                                    <span class="label">Socket.io</span>
+                                </div>
+                                <div class="project-label">
+                                    <span class="label">VanillaJS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="see-more">
+                        <a href="https://github.com/justinthareja">See More</a>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="section get-in-touch" aria-label="Get In Touch">
+                <div class="section-header">
+                    <h1>
+                        <small><i class="icon icon-mountain">[MAIL]</i></small>
+                        <span class="txt highlight">Get In Touch</span>
+                    </h1>
+                   
+                </div>
             </section>
         </div>
-        <footer class="footer">
-            <div class="copyright">&copy;2021 Justin Thareja</div>
+    </main>
+    <!-- TODO: hide when header is showing -->
+    <footer class="footer">
+        <div class="copyright">&copy;2021 Justin Thareja</div>
+        <nav class="nav">
+            <ul class="page-links">
+                <li class="page-link">
+                    <a class="about" href="#about">About</a>
+                </li>
+                <li class="page-link">
+                    <a class="projects" href="#projects">Projects</a>
+                </li>
+                <li class="page-link">
+                    <a class="projects" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="nav">
             <ul class="nav-links">
                 <li class="nav-link">
                     <a href="https://github.com/justinthareja">
@@ -103,8 +177,8 @@
                     </a>
                 </li>
             </ul>
-        </footer>
-    </main>
+        </nav>
+    </footer>
     
     
 

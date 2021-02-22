@@ -14,6 +14,19 @@
     --font-small: 0.8rem;
     --font-smallest: 0.6rem;
 
+        
+    /* COLORS - Neutrals */
+    --grey-050: #F0F4F8;
+    --grey-100: #D9E2EC;
+    --grey-200: #BCCCDC;
+    --grey-300: #9FB3C8;
+    --grey-400: #829AB1;
+    --grey-500: #627D98;
+    --grey-600: #486581;
+    --grey-700: #334E68;
+    --grey-800: #243B53;
+    --grey-900: #102A43;
+
     /* SIZING SYSTEM - BOX MODEL */
     --w-10: 4px;
     --w-20: 8px;
@@ -54,6 +67,16 @@ h2 {font-size: 2.441rem;}
 h3 {font-size: 1.953rem;}
 h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
+
+.h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+.h2 {font-size: 2.441rem;}
+.h3 {font-size: 1.953rem;}
+.h4 {font-size: 1.563rem;}
+.h5 {font-size: 1.25rem;}
 
 small,
 .text-small { font-size: var(--font-small); }
