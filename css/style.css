@@ -99,6 +99,11 @@ body {
     font-weight: 300;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
 .section-container {
     display: block;
     color: var(--color-base);
@@ -110,7 +115,7 @@ body {
     margin-bottom: var(--w-40);
     padding: var(--w-40);
     position: relative;
-    background-color:rgba(0, 0, 0, 0.7);
+    background-color:rgba(0, 0, 0, 0.85);
     border-radius: 8px;
 }
 
@@ -164,6 +169,16 @@ body {
         font-size: var(--font-small);
         letter-spacing: 2px;
     }
+
+    .projects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .section-project {
+        width: 49%;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
@@ -172,5 +187,32 @@ body {
     .pipe {
         font-size: var(--font-base);
         letter-spacing: 3px;
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: center;
+    }
+    
+    .content {
+        max-width: 1200px;
+        flex-direction: row;
+    }
+
+    .section-bio {
+        margin-right: var(--w-40);
+        flex-basis: 450px;
+        position: relative;
+    }
+
+    .nav {
+        position: absolute;
+        bottom: var(--w-40);
+    }
+
+    .projects {
+        width: 49%;
+        flex: 1;
     }
 }
