@@ -161,10 +161,7 @@ body {
 
 .goggles {
     width: 80px;
-    fill: rgb(124, 41, 41);
 }
-
-
 
 .section-project {
     transition: all 0.2s ease;
