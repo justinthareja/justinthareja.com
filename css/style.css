@@ -75,6 +75,12 @@ body {
     fill: var(--color-base);
 }
 
+.section-bio {
+    position: relative;
+}
+
+
+
 .main {
     width: 100%;
     min-height: 100vh;
@@ -122,8 +128,36 @@ body {
 }
 
 
+.bio-pic-container {
+    position: relative;
+}
+
 .bio-pic {
     height: var(--w-100);
+}
+
+.wardrobe-container {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    z-index: var(--z-wardrobe);
+}
+
+.wardrobe {
+    width: 160px;
+}
+
+.beanie-container {
+    top: -7px;
+    
+}
+.goggles {
+    /* TODO ADD GRADIENT */
+}
+
+.goggles-container {
+    top: 70px;
+    fill: rgb(124, 41, 41);
 }
 
 .section-project {

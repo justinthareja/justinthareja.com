@@ -38,6 +38,41 @@ var $video = document.querySelector(".js-bg");
 var $mp4 = $video.querySelector(".js-mp4");
 var $webm = $video.querySelector(".js-webm");
 
+var $draggables = document.querySelectorAll(".js-drag");
+$draggables.forEach($draggable => $draggable.addEventListener("dragstart", handleDragStart));
+$draggables.forEach($draggable => $draggable.addEventListener("dragend", handleDragEnd));
+
+var $droppables = document.querySelectorAll(".js-drop");
+$droppables.forEach($droppable => $droppable.addEventListener("dragenter", handleDragEnter));
+$droppables.forEach($droppable => $droppable.addEventListener("dragover", handleDragOver));
+
+
+function handleDragEnter(e) {
+    e.preventDefault();
+    console.log("drag enter");
+}
+
+function handleDragOver(e) {
+    e.preventDefault();
+    console.log("drag over");
+}
+
+function handleDragStart(e) {
+    console.log('drag start');
+}
+
+function handleDragEnd(e) {
+    console.log("drag end");
+    const {
+        x, y,
+        screenX, screnY, 
+        clienX, clientY 
+    } = e;
+
+    e.target.style.top = x;
+    e.target.style.left = y;
+}
+
 function setState(newState) {
     state = {
         ...state,
