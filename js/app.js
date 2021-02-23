@@ -49,6 +49,14 @@ function changeTheme(newTheme) {
     $wardrobePrimary.setAttribute("src", primary);
     $wardrobeSecondary.setAttribute("src", secondary);
 
+    $wardrobePrimary.setAttribute("data-x", null);
+    $wardrobePrimary.setAttribute("data-y", null);
+    $wardrobePrimary.style.transform = "";
+
+    $wardrobeSecondary.setAttribute("data-x", null);
+    $wardrobeSecondary.setAttribute("data-y", null);
+    $wardrobeSecondary.style.transform = "";
+
     setState({ theme: newTheme });
 }
 
