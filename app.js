@@ -6,6 +6,10 @@ var config = {
             mp4: "./assets/frost/knockout.mp4",
             webm: "./assets/frost/knockout.webm",
             poster: "./assets/frost/knockout-poster.png"
+        },
+        wardrobe: {
+            primary: "./assets/frost/goggles.svg",
+            secondary: "./assets/frost/beanie.svg",
         }
     },
 
@@ -16,6 +20,10 @@ var config = {
             mp4: "./assets/earth/knockout.mp4",
             webm: "./assets/earth/knockout.webm",
             poster: "./assets/earth/knockout-poster.png",
+        },
+        wardrobe: {
+            primary: "./assets/earth/helmet.svg",
+            secondary: "./assets/earth/anchor.svg"
         }
     },
 
@@ -31,7 +39,7 @@ var config = {
 };
 
 var state = {
-    theme: "earth"
+    theme: "frost"
 };
 
 var $video = document.querySelector(".js-bg");
@@ -46,6 +54,9 @@ var $droppables = document.querySelectorAll(".js-drop");
 $droppables.forEach($droppable => $droppable.addEventListener("dragenter", handleDragEnter));
 $droppables.forEach($droppable => $droppable.addEventListener("dragover", handleDragOver));
 
+
+var $wardrobePrimary = document.querySelector(".js-wardrobe-primary");
+var $wardrobeSecondary = document.querySelector(".js-wardrobe-secondary");
 
 function handleDragEnter(e) {
     e.preventDefault();
@@ -96,17 +107,24 @@ function changeTheme(newTheme) {
     checkTheme(newTheme);
 
     document.body.classList.remove(state.theme);
-    setState({ theme: newTheme });
     document.body.classList.add(newTheme);
-
+    
     const { video } = config[newTheme];
     const { webm, mp4, poster } = video;
-
+    
     $webm.setAttribute("src", webm);
     $mp4.setAttribute("src", mp4);
     $video.setAttribute("poster", poster);
     $video.load();
     $video.play();
+    
+    const { wardrobe } = config[newTheme];
+    const { primary, secondary } = wardrobe;
+
+    $wardrobePrimary.setAttribute("data", primary);
+    $wardrobeSecondary.setAttribute("data", secondary);
+
+    setState({ theme: newTheme });
 }
 
 function greetDev() {
