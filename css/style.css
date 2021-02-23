@@ -127,7 +127,6 @@ body {
     position: relative;
 }
 
-
 .bio-pic-container {
     position: relative;
     display: inline-block;
@@ -137,66 +136,53 @@ body {
     width: var(--w-110);
 }
 
-.wardrobe-container {
+.wardrobe {
+    z-index: var(--z-wardrobe);
     display: inline-block;
     position: absolute;
-    z-index: var(--z-wardrobe);
+    top: 0;
+    left: 0;
+    touch-action: none;
+    user-select: none;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
 }
 
-.frost .wardrobe-primary-container {
-    top: 17%;
-    left: 50%;
-    transform: translateX(-44%);
+
+.frost .wardrobe-primary {
+    width: 39%;
+    top: 19%;
+    left: 33%;
 }
 
-.frost .wardrobe-secondary-container {
-    top: -4%;
-    left: 50%;
-    transform: translateX(-44%);
-}
-
-.frost .wardrobe-primary,
 .frost .wardrobe-secondary {
-    width: 80px;
-}
-
-.earth .wardrobe-primary-container {
-    top: -2%;
-    left: 50%;
-    transform: translateX(-43%);
+    width: 39%;
+    top: -1%;
+    left: 33%;
 }
 
 .earth .wardrobe-primary {
-    width: 93%;
-}
-
-.earth .wardrobe-secondary-container {
-    left: 7%;
-    top: 60%;
+    width: 42%;
+    top: 0%;
+    left: 31%;
 }
 
 .earth .wardrobe-secondary {
-    width: 20%;
-}
-
-.wind .wardrobe-primary-container {
-    top: 19%;
-    left: 50%;
-    transform: translateX(-37%);
-}
-
-.wind .wardrobe-secondary-container {
-    top: 55%;
-    left: 50%;
-    transform: translateX(40%) rotate(15deg);
+    width: 15%;
+    top: 64%;
+    left: 2%;
 }
 
 .wind .wardrobe-primary {
-    width: 80%;
+    width: 36%;
+    top: 22%;
+    left: 34%;
 }
 
 .wind .wardrobe-secondary {
-    width: 60%;
+    width: 23%;
+    top: 59%;
+    left: 75%;
 }
 
 .section-project {
@@ -277,11 +263,6 @@ body {
         width: var(--w-120);
     }
 
-    .frost .wardrobe-primary,
-    .frost .wardrobe-secondary {
-        width: 105px;
-    }
-
     .projects {
         display: flex;
         flex-flow: row wrap;
@@ -316,7 +297,6 @@ body {
         padding: var(--w-60);
     }
 
-    
     .section-bio {
         margin-right: var(--w-40);
         flex-basis: 600px;
@@ -325,11 +305,6 @@ body {
 
     .bio-pic {
         width: var(--w-130);
-    }
-
-    .frost .wardrobe-primary,
-    .frost .wardrobe-secondary {
-        width: 160px;
     }
 
     .nav {

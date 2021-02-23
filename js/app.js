@@ -46,8 +46,8 @@ function changeTheme(newTheme) {
     const { wardrobe } = config[newTheme];
     const { primary, secondary } = wardrobe;
 
-    $wardrobePrimary.setAttribute("data", primary);
-    $wardrobeSecondary.setAttribute("data", secondary);
+    $wardrobePrimary.setAttribute("src", primary);
+    $wardrobeSecondary.setAttribute("src", secondary);
 
     setState({ theme: newTheme });
 }

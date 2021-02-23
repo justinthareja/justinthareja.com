@@ -66,16 +66,12 @@
                 <h1 class="hl h2">Justin Thareja</h1>
                 <div class="bio-pic-container">
                     <img class="bio-pic" src="./assets/headshot.jpeg" alt="Headshot" srcset="">
-                    <div class="wardrobe-container wardrobe-primary-container">
-                        <object class="js-wardrobe-primary wardrobe wardrobe-primary" type="image/svg+xml" data="./assets/earth/helmet.svg">
-                            Climbing helmet
-                        </object>
-                    </div>
-                    <div class="wardrobe-container wardrobe-secondary-container">
-                        <object class="js-wardrobe-secondary wardrobe wardrobe-secondary" type="image/svg+xml" data="./assets/earth/anchor.svg">
-                            Climbing anchor
-                        </object>
-                    </div>
+                    <img class="js-wardrobe-primary wardrobe wardrobe-primary draggable" 
+                            src="./assets/earth/helmet.svg" 
+                            alt="Climbing helmet">
+                    <img class="js-wardrobe-secondary wardrobe wardrobe-secondary draggable" 
+                            src="./assets/earth/anchor.svg"
+                            alt="Climbing anchor">
                 </div>
                 
                 <p>I'm a full stack developer applying lessons I've learned from the mountains 
@@ -177,5 +173,8 @@
     
     <script src="js/config.js"></script>
     <script src="js/app.js"></script>
+
+    <script src="https://unpkg.com/interactjs@1.10.3/dist/interact.min.js"></script>
+    <script src="js/drag.js"></script>
 </body>
 </html>

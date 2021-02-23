@@ -1,10 +1,5 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-y="0px" viewBox="0 0 450 450" style="enable-background:new 0 0 450 450; " xml:space="preserve">
-	<style>
-		path {
-			fill: rgb(124, 41, 41);
-		}
-	</style>
+y="0px" viewBox="0 0 450 450" style="enable-background:new 0 0 450 450; fill: rgb(124, 41, 41);" xml:space="preserve">
 	<g id="Layer_1_92_">
 		<path d="M414.833,210.887v-11.062c0-25.951-19.845-50.172-54.445-66.473c-36.866-17.359-102.459-23.828-135.144-23.828
 		c-35.304,0-100.727,7.392-135.629,23.828c-34.602,16.301-54.446,40.521-54.446,66.473v11.062
