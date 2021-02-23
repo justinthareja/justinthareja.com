@@ -69,13 +69,13 @@ function greetDev() {
             return `"${name}"`;
         }
     ).join(", ");
-
-    console.log(
-    `PSST: If you're already lookin', try out my theme changer by calling:
     
-    changeTheme("theme")
+    console.log("PSST: since you're already inspecting, try changing themes by calling");
+    console.log("\n")
+    console.log(`changeTheme("theme")`)
+    console.log("\n")
+    console.log(`current available themes are:`, currentThemes);
     
-    current available themes are:`, currentThemes);
 }
 
 greetDev();
