@@ -138,6 +138,7 @@ body {
 }
 
 .wardrobe-container {
+    display: inline-block;
     position: absolute;
     z-index: var(--z-wardrobe);
 }
@@ -176,6 +177,26 @@ body {
 
 .earth .wardrobe-secondary {
     width: 20%;
+}
+
+.wind .wardrobe-primary-container {
+    top: 19%;
+    left: 50%;
+    transform: translateX(-37%);
+}
+
+.wind .wardrobe-secondary-container {
+    top: 55%;
+    left: 50%;
+    transform: translateX(40%) rotate(15deg);
+}
+
+.wind .wardrobe-primary {
+    width: 80%;
+}
+
+.wind .wardrobe-secondary {
+    width: 60%;
 }
 
 .section-project {

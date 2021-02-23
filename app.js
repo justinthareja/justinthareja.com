@@ -34,6 +34,10 @@ var config = {
             mp4: "./assets/wind/knockout.mp4",
             webm: "./assets/wind/knockout.webm",
             poster: "./assets/wind/knockout-poster.png"
+        },
+        wardrobe: {
+            primary: "./assets/wind/sunglasses.svg",
+            secondary: "./assets/wind/sunblock.svg"
         }
     }
 };
