@@ -1,5 +1,5 @@
 var state = {
-    theme: "frost"
+    theme: "earth"
 };
 
 var $video = document.querySelector(".js-bg");
