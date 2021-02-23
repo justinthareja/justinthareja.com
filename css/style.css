@@ -115,11 +115,15 @@ body {
     padding: var(--w-40);
     position: relative;
     background-color:rgba(0, 0, 0, 0.85);
-    border-radius: 8px;
 }
 
 .section-container:last-of-type .section {
     margin-bottom: 0;
+}
+
+
+.bio-pic {
+    height: var(--w-100);
 }
 
 .section-project {
@@ -196,6 +200,10 @@ body {
         letter-spacing: 2px;
     }
 
+    .bio-pic {
+        height: var(--w-110);
+    }
+
     .projects {
         display: flex;
         flex-flow: row wrap;
@@ -230,10 +238,15 @@ body {
         padding: var(--w-60);
     }
 
+    
     .section-bio {
         margin-right: var(--w-40);
         flex-basis: 600px;
         position: relative;
+    }
+
+    .bio-pic {
+        height: var(--w-130);
     }
 
     .nav {
