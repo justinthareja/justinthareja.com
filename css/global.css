@@ -55,6 +55,16 @@ h3 {font-size: 1.953rem;}
 h4 {font-size: 1.563rem;}
 h5 {font-size: 1.25rem;}
 
+.h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+.h2 {font-size: 2.441rem;}
+.h3 {font-size: 1.953rem;}
+.h4 {font-size: 1.563rem;}
+.h5 {font-size: 1.25rem;}
+
 small,
 .text-small { font-size: var(--font-small); }
 .text-gianormous { font-size: 14rem; }
@@ -66,7 +76,8 @@ small,
 .text-center { text-align: center; }
 .text-emphasize { font-style: italic; }
 
-.highlight { color: var(--color-hl); }
+.hl { color: var(--color-primary); }
+.hl-darker { color: var(--color-primary-darker); }
 
 .bounce {
     animation-name: bounce;
