@@ -148,7 +148,6 @@ body {
             transform: translate(0px, 0px);
 }
 
-
 .frost .wardrobe-primary {
     width: 39%;
     top: 19%;
@@ -199,7 +198,6 @@ body {
 
 .section-project:hover .hl {
     color: var(--color-primary-darker);
-    font-weight: bold;
 }
 
 .section-project:hover .label {
