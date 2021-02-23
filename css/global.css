@@ -1,4 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+@font-face {
+    font-family: 'Concourse';
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    src: url('../assets/concourse/concourse_c2_regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Concourse';
+    font-style: normal;
+    font-weight: bold;
+    font-stretch: normal;
+    src: url('../assets/concourse/concourse_c2_bold.woff2') format('woff2');
+}
 
 * {
     margin: 0;
@@ -9,8 +23,6 @@
 :root {
     /* FONTS */
     --font-base: 16px;
-    --font-gianormous: 20rem;
-    --font-larger: 3rem;
     --font-small: 0.8rem;
     --font-smallest: 0.6rem;
 
@@ -67,7 +79,6 @@ h5 {font-size: 1.25rem;}
 
 small,
 .text-small { font-size: var(--font-small); }
-.text-gianormous { font-size: 14rem; }
 .text-larger { font-size: 3rem; }
 
 .text-thin { font-weight: 100; }
