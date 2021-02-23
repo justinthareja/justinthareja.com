@@ -5,6 +5,7 @@ var state = {
 var $video = document.querySelector(".js-bg");
 var $mp4 = $video.querySelector(".js-mp4");
 var $webm = $video.querySelector(".js-webm");
+var $poster = $video.querySelector(".js-poster");
 
 var $wardrobePrimary = document.querySelector(".js-wardrobe-primary");
 var $wardrobeSecondary = document.querySelector(".js-wardrobe-secondary");
@@ -39,7 +40,8 @@ function changeTheme(newTheme) {
     
     $webm.setAttribute("src", webm);
     $mp4.setAttribute("src", mp4);
-    $video.setAttribute("poster", poster);
+    $poster.setAttribute("src", poster);
+
     $video.load();
     $video.play();
     
