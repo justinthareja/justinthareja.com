@@ -122,6 +122,32 @@ body {
     margin-bottom: 0;
 }
 
+.section-project {
+    transition: all 0.2s ease;
+}
+
+.section-project:hover {
+    background-color:rgba(238, 238, 238, 0.85);
+}
+
+.section-project:hover .section-container {
+    color: var(--color-primary-darker)
+}
+
+.section-project:hover .hl {
+    color: var(--color-primary-darker);
+    font-weight: bold;
+}
+
+.section-project:hover .label {
+    background-color: var(--color-primary-lighter);
+    color: var(--color-primary-darkest);
+}
+
+.section-project:hover p {
+    color: var(--color-primary-darkest);
+}
+
 .nav {
     display: flex;
 }
@@ -147,6 +173,7 @@ body {
 .nav-icon {
     height: var(--w-50);
     fill: var(--color-base);
+    transition: all 0.2s ease;
 }
 
 .label {
@@ -189,19 +216,23 @@ body {
     }
 
     .main {
+        padding: var(--w-60);
         flex-direction: row;
         align-items: stretch;
         justify-content: center;
     }
     
     .content {
-        max-width: 1200px;
         flex-direction: row;
+    }
+
+    .section {
+        padding: var(--w-60);
     }
 
     .section-bio {
         margin-right: var(--w-40);
-        flex-basis: 450px;
+        flex-basis: 600px;
         position: relative;
     }
 
@@ -211,6 +242,7 @@ body {
     }
 
     .projects {
+        min-width: 700px;
         width: 49%;
         flex: 1;
     }

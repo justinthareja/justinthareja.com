@@ -1,7 +1,9 @@
 .earth {
     --color-base: #fff;
+    --color-primary-lighter: rgb(217, 247, 207);
     --color-primary: rgba(201, 255, 184);
     --color-primary-darker: rgb(51, 138, 25);
+    --color-primary-darkest: rgb(18, 54, 6);
     --color-background: rgb(0, 0, 0);
 
     --bg-img-small: url("../assets/earth/bg-small.jpg");
@@ -11,8 +13,11 @@
 
 .frost {
     --color-base: #fff;
+
+    --color-primary-lighter: rgb(221, 250, 255);
     --color-primary: rgba(184, 244, 255);
     --color-primary-darker: rgb(7, 114, 133);
+    --color-primary-darkest: rgb(35, 47, 49);
     --color-background: rgb(0, 0, 0);
 
     --bg-img-small: url("../assets/frost/bg-small.jpg");
@@ -22,8 +27,10 @@
 
 .wind {
     --color-base: #fff;
+    --color-primary-lighter: rgb(204, 252, 236);
     --color-primary: rgb(151, 255, 220);
     --color-primary-darker: rgb(33, 97, 76);
+    --color-primary-darkest: rgb(12, 43, 32);
     --color-background: rgb(0, 0, 0);
 
     --bg-img-small: url("../assets/wind/bg-small.jpg");
