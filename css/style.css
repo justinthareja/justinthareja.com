@@ -75,10 +75,6 @@ body {
     fill: var(--color-base);
 }
 
-.section-bio {
-    position: relative;
-}
-
 
 
 .main {
@@ -127,38 +123,48 @@ body {
     margin-bottom: 0;
 }
 
-
-.bio-pic-container {
+.section-bio {
     position: relative;
 }
 
+
+.bio-pic-container {
+    position: relative;
+    display: inline-block;
+}
+
 .bio-pic {
-    height: var(--w-100);
+    width: var(--w-110);
 }
 
 .wardrobe-container {
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: var(--z-wardrobe);
 }
 
-.wardrobe {
-    width: 160px;
-}
-
 .beanie-container {
-    top: -7px;
-    
-}
-.goggles {
-    /* TODO ADD GRADIENT */
+    top: -4%;
+    transform: translateX(-44%);
 }
 
 .goggles-container {
-    top: 70px;
+    top: 17%;
+    transform: translateX(-44%);
+}
+
+.beanie {
+    width: 80px;
+}
+
+.goggles {
+    width: 80px;
     fill: rgb(124, 41, 41);
 }
+
+
 
 .section-project {
     transition: all 0.2s ease;
@@ -235,7 +241,12 @@ body {
     }
 
     .bio-pic {
-        height: var(--w-110);
+        width: var(--w-120);
+    }
+
+    .goggles,
+    .beanie {
+        width: 105px;
     }
 
     .projects {
@@ -280,7 +291,12 @@ body {
     }
 
     .bio-pic {
-        height: var(--w-130);
+        width: var(--w-130);
+    }
+
+    .goggles,
+    .beanie {
+        width: 160px;
     }
 
     .nav {
