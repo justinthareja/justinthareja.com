@@ -158,15 +158,15 @@ body {
 }
 
 .frost .wardrobe-secondary {
-    width: 39%;
+    width: 41%;
     top: -1%;
-    left: 33%;
+    left: 31%;
 }
 
 .earth .wardrobe-primary {
-    width: 42%;
-    top: 0%;
-    left: 31%;
+    width: 45%;
+    top: -1%;
+    left: 29%;
 }
 
 .earth .wardrobe-secondary {
@@ -176,9 +176,9 @@ body {
 }
 
 .wind .wardrobe-primary {
-    width: 36%;
-    top: 22%;
-    left: 34%;
+    width: 34%;
+    top: 24%;
+    left: 35%;
 }
 
 .wind .wardrobe-secondary {
